@@ -1,3 +1,4 @@
+# Startup configuration of Spring-cloud-kubernetes
 spring:
   application:
     name: self-healing-archetype

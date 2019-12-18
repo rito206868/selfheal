@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: self-healing-archetype
+    
+logging:
+  config: classpath:logback.xml
+
+# lets listen on all ports to ensure we can be invoked from the pod IP
+server:
+  address: 0.0.0.0
+
+management:
+  address: 0.0.0.0
+  security:
+    enabled: false
+
+endpoints:
+  enabled: true
+  health:
+    enabled: true
+
+security:
+  basic:
+    enabled: false
+
+# - Actuator Info
+info:
+  app:
+    name: self-healing-archetype
+    description: Sample springboot application
+    version:  1.0.0
+    runtime-config-type: desktop
+    APPLICATION_NAME: self-healing-archetype
