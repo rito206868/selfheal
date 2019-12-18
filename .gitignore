@@ -1,0 +1,11 @@
+/target/
+.classpath
+.project
+.logs
+.settings/*
+.idea
+*.iml
+**/target/*
+soapui.log
+soapui-errors.log
+global-groovy.log
